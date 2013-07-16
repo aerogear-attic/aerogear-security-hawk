@@ -23,20 +23,19 @@ import com.wealdtech.ServerError;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-import static javax.ws.rs.core.Response.Status.INTERNAL_SERVER_ERROR;
-import static javax.ws.rs.core.Response.Status.UNAUTHORIZED;
-
 public class ExceptionHandler {
+
+    private static final int UNAUTHORIZED = 401;
+    private static final int INTERNAL_SERVER_ERROR = 500;
 
     public static void handle(HttpServletResponse response, Exception exception) {
 
         Throwable e = exception.getCause();
 
-
         if (e instanceof DataError) {
-            responseWriter(response, UNAUTHORIZED.getStatusCode(), e.getMessage());
+            responseWriter(response, UNAUTHORIZED, e.getMessage());
         } else if (e instanceof ServerError) {
-            responseWriter(response, INTERNAL_SERVER_ERROR.getStatusCode(), e.getMessage());
+            responseWriter(response, INTERNAL_SERVER_ERROR, e.getMessage());
         }
 
     }
