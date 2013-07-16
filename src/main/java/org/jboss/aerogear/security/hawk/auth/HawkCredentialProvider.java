@@ -15,7 +15,7 @@
  *  limitations under the License.
  */
 
-package org.jboss.aerogear.security.auth;
+package org.jboss.aerogear.security.hawk.auth;
 
 import com.wealdtech.hawk.HawkCredentials;
 

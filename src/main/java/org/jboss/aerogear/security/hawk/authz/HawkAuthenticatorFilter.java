@@ -15,9 +15,9 @@
  *  limitations under the License.
  */
 
-package org.jboss.aerogear.security.web.authz;
+package org.jboss.aerogear.security.hawk.authz;
 
-import org.jboss.aerogear.security.exception.ExceptionHandler;
+import org.jboss.aerogear.security.hawk.exception.ExceptionHandler;
 
 import javax.inject.Inject;
 import javax.servlet.Filter;

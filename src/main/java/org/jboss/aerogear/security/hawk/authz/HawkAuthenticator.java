@@ -15,14 +15,14 @@
  *  limitations under the License.
  */
 
-package org.jboss.aerogear.security.web.authz;
+package org.jboss.aerogear.security.hawk.authz;
 
 import com.google.common.collect.ImmutableMap;
 import com.google.common.io.CharStreams;
 import com.wealdtech.hawk.Hawk;
 import com.wealdtech.hawk.HawkCredentials;
 import com.wealdtech.hawk.HawkServer;
-import org.jboss.aerogear.security.auth.HawkCredentialProvider;
+import org.jboss.aerogear.security.hawk.auth.HawkCredentialProvider;
 
 import javax.inject.Inject;
 import javax.servlet.http.HttpServletRequest;

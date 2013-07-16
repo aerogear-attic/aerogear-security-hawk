@@ -15,7 +15,7 @@
  *  limitations under the License.
  */
 
-package org.jboss.aerogear.security.exception;
+package org.jboss.aerogear.security.hawk.exception;
 
 import com.wealdtech.DataError;
 import com.wealdtech.ServerError;
